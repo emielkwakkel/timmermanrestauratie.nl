@@ -1,0 +1,16 @@
+@media print{body{margin:0 !important;padding:0;line-height:1.4em;word-spacing:1px;letter-spacing:0.2px;font:13px Arial, Helvetica,"Lucida Grande", serif;color:#000;}
+footer{display:none;}
+.header{position:absolute;top:20px;display:block;filter:alpha(opacity=100) !important;-khtml-opacity:1 !important;-moz-opacity:1 !important;opacity:1 !important;}
+.header div.container div img{display:none;}
+.header div.container div h1{color:#000;font-size:30px;}
+.header div.container div h2{color:#000;font-size:20px;}
+.discipline{float:left;margin:70px 0 0 0 !important;}
+.discipline .container .row div{float:left;}
+.icon{width:150px;float:left;}
+section.about-me{display:block;float:left;clear:both;}
+section.about-me img{float:left;margin:0 20px 0 0;}
+.slogan .container h2{font-size:30px;}
+a:link, a:visited{background:transparent;color:#333;text-decoration:none;}
+a:link[href^="http://"]:after, a[href^="http://"]:visited:after{content:" (" attr(href) ") ";font-size:11px;}
+a[href^="http://"]{color:#000;}
+}

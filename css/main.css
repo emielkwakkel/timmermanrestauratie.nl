@@ -1,0 +1,181 @@
+/* Generic classes */
+.hide-mobile { 
+	display: none; /* Hide element for mobile devices (-768px width screen) */
+}
+
+.fallback {
+	display: none; /* Hide element by default */
+}
+
+.no-svg .fallback {
+	display: block; /* Display element if Modernizr added the class no-svg to the body */
+}
+
+body {
+	font-family: 'Open Sans', Verdana, Arial, sans-serif; /* Default font */
+	color: #333;
+	cursor: default;
+}
+
+h1,h2,h3 {
+	color: #22496c;	
+}
+
+h1,h2 {
+	font-family: "Dancing Script";
+}
+
+h2 {
+	font-size: 40px;
+}
+
+p {
+	font-size: 15px;
+	font-weight: 200;
+	line-height: 1.9em;
+}
+
+body .container .row {
+	opacity: 0;
+	filter: alpha(opacity=0); /* Set opacity to zero by default, changes with onScreen(); */
+}
+
+/* Section Workplace */
+section.workplace {
+	background: url('../img/workplace.png') #333;
+	position: static;
+	padding: 40px 0;
+	height: 400px;
+	margin-bottom: 40px;
+	background-size: 987px 500px;
+	background-position: 50% 0px; /* Centers the background already before the user starts scrolling and jQuery parallax adds background-position to the html */
+}
+
+section.workplace h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 44px;
+	margin: 60px 0 30px 0;
+	line-height: 1.5em;
+}
+
+/* Section Slogan */
+section.slogan {
+	background: #fff9f4;
+	position: static;
+	padding: 40px 0;
+}
+
+section.slogan h2 {
+	margin: 20px 0;
+	text-align: center;
+}
+	
+section.slogan p img {
+	width: 100%;
+	height: auto;
+	margin: 0 0 15px 0;
+}
+
+/* Section About Me */
+section.about-me {
+	margin: 40px 0;
+	text-align: center;
+}
+
+p.me img {
+	width: 200px;
+	margin: 0 0 30px 0;
+	border-radius: 50%;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	
+	.hide-mobile {
+		display: block;
+	}
+	
+	/* Section Workplace */
+	section.workplace {
+		height: 400px;
+	}
+	
+	section.workplace h1 {
+		margin-top: 40px;
+		font-size: 55px;
+	}
+	
+	/* Section Slogan */
+	section.slogan {
+		/*background-size: 2800px auto;*/
+	}
+	
+	section.slogan h2 {
+		clear: both;
+		margin: 0 0 40px 0;
+	}
+	
+	section.slogan p {
+		text-align: center;
+		margin: 40px 0 0 0;
+	}
+	
+	section.slogan p img {
+		width: auto;
+		height: 190px;
+		margin: 0 10px 0 0;
+	}
+	
+	/* Section About Me */
+	section.about-me {
+		margin: 100px 0;
+		text-align: left;
+	}
+	
+	section.about-me h2 {
+		font-size: 40px;
+	}
+	
+	p.me img {
+		width: 200px;
+		margin: 20px 40px 0 0;
+		float: left;
+	}
+	
+	p.media {
+		float: left;
+	}
+	
+	p.media a {
+		margin: 0 10px 0 0;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {	
+	
+	/* Section Workplace */
+	section.workplace h1 {
+		margin-top: 30px;
+		font-size: 64px;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	
+}
+
+/* Retina displays */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and ( 	min--moz-device-pixel-ratio: 2),
+only screen and ( 	-o-min-device-pixel-ratio: 2/1),
+only screen and (		 min-device-pixel-ratio: 2),
+only screen and (			min-resolution: 192dpi),
+only screen and (			 min-resolution: 2dppx) { 
+	section.slogan {
+		background-size: 8px 8px;
+	}
+}
